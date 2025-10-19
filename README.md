@@ -1,16 +1,9 @@
-# Qwave
+# 🚀 Qwave (Quantum Watermark Detector )
 QWave is a Quantum Machine Learning (QML) application that detects digital watermarks in images using variational quantum circuits and amplitude embedding. It combines classical image processing with quantum intelligence to deliver fast, accurate, and visually intuitive watermark detection.
 
-# 🚀 Quantum Watermark Detector
-
-**A Quantum Machine Learning (QML) Application for Detecting Digital Watermarks in Images Using Quantum Computing Principles**
-
 ## 📌 Project Overview
-
-**Name:** Quantum Watermark Detector  
-**Type:** Quantum Machine Learning (QML) Application  
-**Goal:** Detect digital watermarks in images using quantum computing principles  
-**Approach:** Variational quantum circuits with amplitude embedding to classify images as *“watermarked”* or *“clean”*
+QWave is a cutting-edge Quantum Machine Learning (QML) application designed to detect hidden digital watermarks in images using principles of quantum computing. Unlike classical watermark detection methods, QWave leverages variational quantum circuits and amplitude embedding to classify images as “watermarked” or “clean” with quantum advantage.
+This project bridges the gap between theoretical quantum computing and practical computer vision applications — demonstrating how quantum algorithms can be applied to real-world problems like content authentication, copyright protection, and digital forensics.
 
 ## 🧩 Core Components
 ### 1. Data Processing
