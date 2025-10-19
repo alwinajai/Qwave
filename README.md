@@ -105,17 +105,6 @@ Save results, plots, and model weights in data/results/
 5. Run the GUI (for Live Detection)
 python gui_detector.py
 
-🎯 Key Points
-✅ Fully working Quantum ML project
-✅ Complete training + evaluation pipeline
-✅ Interactive GUI with visualizations
-✅ Real-world CIFAR-100 dataset
-✅ True quantum circuit implementation
-✅ Amplitude embedding + variational circuits
-✅ Feature importance heatmaps
-✅ Clean, documented, and modular codebase
-✅ Ready for presentation or portfolio submission
-
 🛠️ Customization Options:
 🔧 Change watermark pattern → src/cifar_watermark_processor.py
 📈 Adjust number of training samples → main.py
