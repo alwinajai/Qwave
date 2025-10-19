@@ -12,18 +12,7 @@ QWave is a Quantum Machine Learning (QML) application that detects digital water
 **Goal:** Detect digital watermarks in images using quantum computing principles  
 **Approach:** Variational quantum circuits with amplitude embedding to classify images as *“watermarked”* or *“clean”*
 
-This project provides a **complete end-to-end implementation** that combines:
-
-- 🧠 Classical Image Processing  
-- ⚛️ Quantum Machine Learning  
-- 💻 Professional GUI Interface  
-- 📊 Real-world Dataset (CIFAR-100)  
-- 🧩 Model Training + Live Detection  
-
-Perfect for **academic projects**, **course assignments**, or **quantum computing portfolios**.
-
 ## 🧩 Core Components
-
 ### 1. Data Processing
 - Uses **CIFAR-100** dataset (100 classes, 32×32 RGB images).  
 - Algorithmically embeds **4×4 binary watermark patterns** in half the images.  
@@ -53,27 +42,42 @@ Perfect for **academic projects**, **course assignments**, or **quantum computin
   - 🟢 “Watermark Detected!”  
   - 🔵 “No Watermark Detected.”
 
+
 ## 5. 🗃️ Folder Structure
 qml-watermark-detector/
-├── venv/ # Virtual environment
-├── data/ # Data storage
-│ ├── raw/ # Raw CIFAR-100 data
-│ ├── processed/ # Cached feature vectors
-│ └── results/ # Training outputs, plots, model weights
-├── src/ # Source code
-│ ├── data_generator.py # Synthetic data generator (backup)
-│ ├── quantum_model.py # Full quantum model (training)
-│ ├── quantum_predictor.py # Lightweight model for GUI prediction
-│ ├── trainer.py # Training logic
-│ ├── evaluator.py # Evaluation metrics
-│ └── cifar_watermark_processor.py # CIFAR-100 + watermark embedding
-├── main.py # Train the model (run first)
-├── gui_detector.py # GUI for live watermark detection
-├── requirements.txt # Dependencies list
-└── README.md # Project documentation
+QWave/
+├── venv/                          # Virtual environment (optional, not uploaded to GitHub)
+│
+├── data/                          # Dataset and experiment outputs
+│   ├── raw/                       # Original CIFAR-100 dataset
+│   ├── processed/                 # Preprocessed feature vectors (cached)
+│   └── results/                   # Training outputs, model weights, logs, and plots
+│
+├── src/                           # Source code (main logic)
+│   ├── preprocessing/             # Image + watermark data handling
+│   │   └── cifar_watermark_processor.py   # Embeds and processes watermarks in CIFAR images
+│   │
+│   ├── model/                     # Quantum model architecture
+│   │   ├── quantum_model.py       # Full variational quantum circuit (training model)
+│   │   └── quantum_predictor.py   # Lightweight circuit for GUI-based predictions
+│   │
+│   ├── training/                  # Training and evaluation pipeline
+│   │   ├── trainer.py             # Model training logic and optimization
+│   │   └── evaluator.py           # Model evaluation and metric generation
+│   │
+│   ├── utils/                     # Helper modules (feature extraction, normalization, etc.)
+│   │   └── data_generator.py      # Synthetic data generator (backup or testing)
+│   │
+│   └── gui/                       # Graphical User Interface
+│       └── gui_detector.py        # Live detection interface with visualization
+│
+├── main.py                        # Entry point — trains the QWave model
+│
+├── requirements.txt               # List of dependencies
+│
+├── README.md                      # Project documentation
 
 ##⚙️ Installation & Setup
-
 ###1. Clone the Repository
 ```bash
 git clone https://github.com/yourusername/qml-watermark-detector.git
