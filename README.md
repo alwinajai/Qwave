@@ -46,36 +46,36 @@ QWave is a Quantum Machine Learning (QML) application that detects digital water
 ## 5. 🗃️ Folder Structure
 qml-watermark-detector/
 QWave/
-├── venv/                          # Virtual environment (optional, not uploaded to GitHub)
+├── venv/ # Virtual environment (optional, not uploaded to GitHub)
 │
-├── data/                          # Dataset and experiment outputs
-│   ├── raw/                       # Original CIFAR-100 dataset
-│   ├── processed/                 # Preprocessed feature vectors (cached)
-│   └── results/                   # Training outputs, model weights, logs, and plots
+├── data/ # Dataset and experiment outputs
+│ ├── raw/ # Original CIFAR-100 dataset
+│ ├── processed/ # Preprocessed feature vectors (cached)
+│ └── results/ # Training outputs, model weights, logs, and plots
 │
-├── src/                           # Source code (main logic)
-│   ├── preprocessing/             # Image + watermark data handling
-│   │   └── cifar_watermark_processor.py   # Embeds and processes watermarks in CIFAR images
-│   │
-│   ├── model/                     # Quantum model architecture
-│   │   ├── quantum_model.py       # Full variational quantum circuit (training model)
-│   │   └── quantum_predictor.py   # Lightweight circuit for GUI-based predictions
-│   │
-│   ├── training/                  # Training and evaluation pipeline
-│   │   ├── trainer.py             # Model training logic and optimization
-│   │   └── evaluator.py           # Model evaluation and metric generation
-│   │
-│   ├── utils/                     # Helper modules (feature extraction, normalization, etc.)
-│   │   └── data_generator.py      # Synthetic data generator (backup or testing)
-│   │
-│   └── gui/                       # Graphical User Interface
-│       └── gui_detector.py        # Live detection interface with visualization
+├── src/ # Source code (main logic)
+│ ├── preprocessing/ # Image + watermark data handling
+│ │ └── cifar_watermark_processor.py # Embeds and processes watermarks in CIFAR images
+│ │
+│ ├── model/ # Quantum model architecture
+│ │ ├── quantum_model.py # Full variational quantum circuit (training model)
+│ │ └── quantum_predictor.py # Lightweight circuit for GUI-based predictions
+│ │
+│ ├── training/ # Training and evaluation pipeline
+│ │ ├── trainer.py # Model training logic and optimization
+│ │ └── evaluator.py # Model evaluation and metric generation
+│ │
+│ ├── utils/ # Helper modules (feature extraction, normalization, etc.)
+│ │ └── data_generator.py # Synthetic data generator (backup or testing)
+│ │
+│ └── gui/ # Graphical User Interface
+│ └── gui_detector.py # Live detection interface with visualization
 │
-├── main.py                        # Entry point — trains the QWave model
+├── main.py # Entry point — trains the QWave model
 │
-├── requirements.txt               # List of dependencies
+├── requirements.txt # List of dependencies
 │
-├── README.md                      # Project documentation
+└── README.md # Project documentation
 
 ##⚙️ Installation & Setup
 ###1. Clone the Repository
