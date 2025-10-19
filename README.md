@@ -43,7 +43,7 @@ QWave is a Quantum Machine Learning (QML) application that detects digital water
   - 🔵 “No Watermark Detected.”
 
 
-## 5. 🗃️ Folder Structure
+## 5. 🗃️ Folder Structure ( View the folder structure properly in the edit mode of Readme.md file )
 qml-watermark-detector/
 QWave/
 ├── venv/ # Virtual environment (optional, not uploaded to GitHub)
